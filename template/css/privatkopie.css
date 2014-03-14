@@ -1,8 +1,147 @@
 body {
-	margin:0;
+	margin: 5px 7%;
 	font: 14px/18px 'Droid Sans', Arial, sans-serif;
-	background: #E6E7E8 url(/template/img/sitebg.png) center center;
+	background: #eaeaea url(../img/sitebg.png) center center;
 }
 
-.pagewrapper {
+
+#pagewrapper {
+	margin: 0 auto;
+	width: 98%;
+	max-width: 60em;
+}
+
+#topnav {
+}
+
+#bg {
+	background:#fff;
+	padding: 2em 100px;
+}
+
+
+#topnav > ul {
+	margin:0 0 0 87px;
+	padding:0;
+}
+
+#topnav > ul > li {
+	margin:0;
+	padding:0;
+	display:inline-block;
+	*float:left;
+}
+#topnav > ul > li > a {
+	padding:10px 12px;
+	display:inline-block;
+	color: inherit;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+#topnav > ul > li > a:hover {
+	color:#fff;
+	background: #CD1D23;
+}
+
+#logo {
+	margin-left:-42px;
+	float:left;
+}
+
+
+.clr {
+	clear:both;
+}
+
+
+.pr {
+	padding: 36px 7% 0 100px;
+}
+
+.prh {
+	font-size:1.4em;
+	text-transform: uppercase;
+	letter-spacing:.1em;
+	font-weight:bold;
+}
+
+.prorga {
+	font-weight:normal;
+	display:inline-block;
+	position:relative;
+	line-height:1em;
+	margin: 0 .7em .7em 0;
+}
+
+.prorga:after {
+	content: "";
+	display:block;
+	height:1.8em;
+	margin: -1.4em -.6em 0;
+	border-right: 2px solid #000;
+	padding:0 30px;
+}
+
+.prt {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+
+h1 {
+	color: #CD1D23;
+	font-size: 2.3em;
+	line-height: 1.1em;
+	margin: .2em -.1em;
+}
+
+.teaser {
+	font-weight:bold;
+	font-size:1.1em;
+	margin: 1.6em 0;
+}
+
+h2 {
+	font-size: 1.8em;
+	text-transform:uppercase;
+}
+
+h3 {
+	font-size: 1.4em;
+	color: #CD1D23;
+	text-transform:uppercase;
+	margin: .6em 0;
+}
+
+p {
+	margin: .6em 0;
+}
+
+.claim  {
+	margin:0;
+	padding:0;
+	list-style: none;
+	counter-reset: item;
+}
+
+.claim > li {
+	display: block;
+	margin: 2.2em 0;
+}
+
+.claim > li:before {
+	display: inline-block;
+	content: counter(item);
+	counter-increment: item;
+	width: 29px;
+	height: 35px;
+	margin: -9px 0 0 -40px;
+	float: left;
+	text-align: center;
+	font-size:1.2em;
+	color:#999;
+	line-height:1em;
+	padding-top:9px;
+	background: url(../img/claim.png) no-repeat;
 }
