@@ -1,5 +1,5 @@
 body {
-	margin: 5px 7%;
+	margin: 5px 7% 50px;
 	font: 14px/18px 'Droid Sans', Arial, sans-serif;
 	background: #eaeaea url(../img/sitebg.png) center center;
 }
@@ -14,9 +14,16 @@ body {
 #topnav {
 }
 
-#bg {
+.whitebg {
 	background:#fff;
-	padding: 2em 100px;
+}
+
+.greybg  {
+	background:#f7f7f7;
+}
+
+.indent {
+	padding: 1em 100px .1em;
 }
 
 
@@ -144,4 +151,45 @@ p {
 	line-height:1em;
 	padding-top:9px;
 	background: url(../img/claim.png) no-repeat;
+}
+
+
+.flowchart {
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+
+.flowchart li {
+	height:105px;
+}
+
+.flowchart > li > h3 {
+	width:40%;
+	text-align:right;
+}
+
+.flowchart > li > p {
+	width:40%;
+	margin-left:19%
+}
+
+.flowchart > li > h3, .flowchart > li > p {
+
+	vertical-align:middle;
+	display:inline-block;
+}
+
+.howto {
+	padding-top: 20px;
+}
+
+.blocklink {
+	text-decoration:none;
+	color:black;
+}
+
+.pseudolink {
+	color: blue;
+	text-decoration: underline;
 }
