@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(DroidSans/DroidSans.ttf) format('TrueType');
+}
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Droid Sans Bold'), local('DroidSans-Bold'), url(DroidSans/DroidSans-Bold.ttf) format('TrueType');
+}
+
 body {
 	margin: 5px 4% 50px;
 	font: 14px/18px 'Droid Sans', Arial, sans-serif;
@@ -103,7 +116,7 @@ h1 {
 .teaser {
 	font-weight:bold;
 	font-size:1.1em;
-	margin: 1.6em 0;
+	margin: .8em 0 1.3em;
 }
 
 h2 {
@@ -113,13 +126,14 @@ h2 {
 
 h3 {
 	font-size: 1.4em;
+	line-height: 1em;
 	color: #CD1D23;
 	text-transform:uppercase;
-	margin: .6em 0;
+	margin: .6em 0 .2em;
 }
 
 p {
-	margin: .6em 0;
+	margin: .4em 0;
 }
 
 .claim  {
@@ -306,7 +320,7 @@ p {
 	}
 
 	.progressbar {
-		margin: 0 -31px;
+		margin: 0 69px;
 	}
 
 	#logo {
@@ -341,13 +355,101 @@ p {
 		margin: 0;
 		font-size: .9em;
 	}
+	
+	.bt {
+		margin: 3% 15%;
+		padding: 4%;
+	}
+	
 }
 
 
 @media (max-width: 50em) {
+	body {
+		margin: 10px 1%;
+	}
+	#topnav > ul {
+		margin: 20px 0;
+		text-align:center;
+	}
+	#topnav > ul > li > a {
+		padding: 7px 8px;
+	}
+	.prh {
+		font-size: 1em;
+	}
+	#logo {
+		margin: -8px 12px 0 0;
+		width: 75px;
+	}
+	h1 {
+		font-size: 2em;
+		margin-left: 87px;
+	}
+	.pr {
+		padding: 0px;
+	}
+	
 	#flow li {
 		float:none;
 		width: 320px;
 		margin: 10px auto;
+	}
+	#claims {
+		padding: 10px 20px 0 50px;
+	}
+	
+	.progressbar {
+		margin: 0 19px;
+	}
+	
+	.bt {
+		margin: 3% 5%;
+		padding: 6% 4%;
+	}
+	
+}
+
+
+@media (max-width: 30em) {
+	#topnav > ul {
+		display:none;
+	}
+
+
+	#topnav:before {
+		content:"NAV";
+		display:block;
+		position:absolute;
+		top:0;
+		right:0;
+		width:2em;
+		padding: .8em .2em;
+		color:#fff;
+		font-size:2em;
+		background: #555;
+		border-radius: 0 0 0 .3em;
+
+	}
+
+	#topnav:hover > ul {
+		display:block;
+		position:absolute;
+		background: #555;
+		color: #fff;
+		top:0;
+		right:0;
+		z-index:9;
+		box-shadow: #000 0 0 5px;
+	}
+	#topnav:hover > ul > li {
+		display:block;
+	}
+
+	#topnav:hover > ul > li > a {
+		font-size:1.2em;
+		padding: 1em 2em;
+		width:100px;
+		border-bottom:1px solid #666;
 	}
 }
